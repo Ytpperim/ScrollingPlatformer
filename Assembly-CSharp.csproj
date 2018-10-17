@@ -67,6 +67,7 @@
     <Compile Include="Assets\provided\scripts\LiveboxController.cs" />
     <Compile Include="Assets\provided\scripts\Utility.cs" />
     <Compile Include="Assets\provided\scripts\VulnerabilityController.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/machb608/Documents/ScrollingPlatformer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
