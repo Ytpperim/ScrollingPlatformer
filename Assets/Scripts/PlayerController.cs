@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
     public int user_layer_platform;
     private float get_axis_horizontal = 0.0F;
     private bool get_key_down_space = false;
+    public string pickup_tag;
 	// Use this for initialization
 	void Start () {
         m_rb = GetComponent<Rigidbody>();
@@ -51,5 +52,12 @@ public class PlayerController : MonoBehaviour {
             Vector3.down,
             collider_radius + grounded_epsilon,
             platform_layer);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag(pickup_tag)) {
+            other.gameObject.SetActive(false);
+        }
+        
     }
 }

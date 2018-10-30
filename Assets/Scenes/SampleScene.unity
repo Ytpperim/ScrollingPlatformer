@@ -614,6 +614,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fddb86f70d7aa3542b7ab781373c4905, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &1765394850
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4754601774347586, guid: 681c82211844ba54b962b7032781709c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754601774347586, guid: 681c82211844ba54b962b7032781709c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754601774347586, guid: 681c82211844ba54b962b7032781709c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754601774347586, guid: 681c82211844ba54b962b7032781709c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.19740583
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754601774347586, guid: 681c82211844ba54b962b7032781709c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.20681587
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754601774347586, guid: 681c82211844ba54b962b7032781709c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.25575545
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754601774347586, guid: 681c82211844ba54b962b7032781709c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9234974
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754601774347586, guid: 681c82211844ba54b962b7032781709c, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 681c82211844ba54b962b7032781709c, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &2033421419
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,6 +774,7 @@ MonoBehaviour:
   max_speed: 15
   jump_height: 200
   user_layer_platform: 0
+  pickup_tag: 
 --- !u!114 &2033421426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,6 +790,7 @@ MonoBehaviour:
   max_speed: 15
   jump_height: 500
   user_layer_platform: 8
+  pickup_tag: pickup
 --- !u!1001 &2089771847
 Prefab:
   m_ObjectHideFlags: 0
