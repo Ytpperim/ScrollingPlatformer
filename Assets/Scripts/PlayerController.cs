@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
     public float jump_height = 200F ;
     private Collider m_collider;
     private float collider_radius = 0.0F;
-    private float grounded_epsilon = 0.05F;
+    private float grounded_epsilon = 0.15F;
     public int user_layer_platform;
     private float get_axis_horizontal = 0.0F;
     private bool get_key_down_space = false;
