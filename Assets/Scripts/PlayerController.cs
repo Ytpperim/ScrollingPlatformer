@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour {
     private float get_axis_horizontal = 0.0F;
     private bool get_key_down_space = false;
     public string pickup_tag;
+    public GameManager gm;
+
 	// Use this for initialization
 	void Start () {
         m_rb = GetComponent<Rigidbody>();
@@ -57,6 +59,7 @@ public class PlayerController : MonoBehaviour {
     {
         if(other.gameObject.CompareTag(pickup_tag)) {
             other.gameObject.SetActive(false);
+            gm.score++;
         }
         
     }
