@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
     private float get_axis_horizontal = 0.0F;
     private bool get_key_down_space = false;
     public string pickup_tag;
+    public string livebox_tag;
     public GameManager gm;
 
 	// Use this for initialization
@@ -59,8 +60,15 @@ public class PlayerController : MonoBehaviour {
     {
         if(other.gameObject.CompareTag(pickup_tag)) {
             other.gameObject.SetActive(false);
-            gm.score++;
+            gm.score += 10;
         }
         
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.CompareTag(livebox_tag))
+        {
+            gm.game_over();
+        }
     }
 }
