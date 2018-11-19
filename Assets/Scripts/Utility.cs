@@ -14,8 +14,8 @@ public class Utility {
         while (elapsedTime < seconds)
         {
             // TODO 441: Move our position to some lerped vector between startingPosition and end based on the elapsed time
-            rb.MovePosition(startingPos); // TODO 441: REMOVE THIS LINE and uncomment the 2 lines below
-            //Vector3 lerped_vector = Vector3.Lerp(...);  
+            Vector3 lerped_vector = Vector3.Lerp(startingPos, );
+            rb.MovePosition(startingPos); // TODO 441: REMOVE THIS LINE and uncomment the 2 lines 
             //rb.MovePosition(lerped_vector);
 
             // Sync up with frame rate
