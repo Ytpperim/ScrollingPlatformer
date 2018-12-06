@@ -20,14 +20,12 @@ public class GameManager : MonoBehaviour
     private bool mutex_lock;
 
     void OnDestroy()
-    {
-        // TODO 441: Store the GameManager's score into PersistGM
+    { 
         PersistGM.score = score;
     } 
 
     void Start()
     {
-        // TODO 441: Restore the GameManager's score from PersistGM
         score = PersistGM.score;
         // This makes it so that the score is printed as 0 to start with.
         update_score_ui();
@@ -53,7 +51,7 @@ public class GameManager : MonoBehaviour
         if (!mutex_lock)
         {
             Debug.Log("Game over!");
-            Invoke("restart_game", 2);
+            Invoke("restart_game", 3);
             update_notice_ui("Game Over!");
             mutex_lock = true;
         }
