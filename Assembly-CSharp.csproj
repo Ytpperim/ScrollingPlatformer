@@ -62,14 +62,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\provided\scripts\Follow.cs" />
-    <Compile Include="Assets\provided\scripts\FreerangeController.cs" />
-    <Compile Include="Assets\provided\scripts\VulnerabilityController.cs" />
     <Compile Include="Assets\Scripts\ButtonController.cs" />
+    <Compile Include="Assets\Scripts\FreerangeController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LiveboxController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
+    <Compile Include="Assets\Scripts\VulnerabilityController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/machb608/Documents/ScrollingPlatformer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
